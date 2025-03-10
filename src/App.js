@@ -61,7 +61,7 @@ export default function PinnedProjects() {
       <ul className="projects-list">
         {pinnedArr.map((project, index) => (
           <li key={index} className="project-list-item">
-            <div className="project-initials">{project.initials} </div>
+            <div className={project.bgColor}>{project.initials} </div>
             <div className="project-content-wrapper">
               <div className="project-content">
                 <a href="#" className="project-link">
